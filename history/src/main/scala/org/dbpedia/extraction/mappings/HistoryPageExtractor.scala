@@ -93,9 +93,9 @@ class HistoryPageExtractor(
       quads += new Quad(context.language, DBpediaDatasets.HistoryData, revision.pageUri, wikiPageLengthProperty, revision.text_size.toString, page.sourceIri, nonNegativeInteger)
 
       // TODO : CREATE OR FIND PROP FOR  :
-      // revision.contributorDeleted
+      // revision.contributorDeleted ov:DeletedEntry ?
       // revision.minor_edit
-      // revision.text_delta
+      // revision.text_delta https://vocab.org/changeset/schema#ChangeSet ?
 
       rev_index+=1
     })
